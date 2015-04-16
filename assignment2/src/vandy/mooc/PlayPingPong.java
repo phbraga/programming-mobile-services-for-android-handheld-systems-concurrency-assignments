@@ -126,9 +126,9 @@ public class PlayPingPong implements Runnable {
             	++mIterationsCompleted;
 
             	if(mMyType == PingPong.PING) {
-            		mOutputStrategy.print("\nPING(" + mIterationsCompleted + ")");
+            		mOutputStrategy.print("PING(" + mIterationsCompleted + ")\n");
             	} else {
-            		mOutputStrategy.print("\nPONG(" + mIterationsCompleted + ")");
+            		mOutputStrategy.print("PONG(" + mIterationsCompleted + ")\n");
             	}
             	
             	
@@ -175,7 +175,7 @@ public class PlayPingPong implements Runnable {
      */
     public void run() {
         // Let the user know we're starting. 
-        mOutputStrategy.print("Ready...Set...Go!");
+        mOutputStrategy.print("Ready...Set...Go!\n");
        
         // Create the ping and pong threads.
         // - you fill in here.
@@ -199,6 +199,6 @@ public class PlayPingPong implements Runnable {
 		}
 
         // Let the user know we're done.
-        mOutputStrategy.print("\nDone!");
+        mOutputStrategy.print("Done!");
     }
 }
